@@ -33,6 +33,7 @@ main {
   justify-content: center;
   background: url('./images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 article {
