@@ -1,0 +1,137 @@
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+}
+
+
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  min-height: 100lvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+article {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+article .content {
+  display: flex;
+  padding: 20px 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+article .content p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--desaturated-blue);
+}
+
+article .music {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+article .music img {
+  width: 35px;
+}
+
+article .music .plan {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+
+article .music .plan .plan-text {
+  text-align: left;
+}
+
+
+article .music .link a {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--bright-blue);
+  transition: .5s;
+}
+
+article .music .link a:hover {
+  color: hsl(245, 75%, 52%, 70%);
+}
+
+article .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+article .buttons button {
+  border: none;
+  padding: 10px 20px;
+  background: none;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+
+article .buttons button.payment {
+  background-color: var(--bright-blue);
+  border-radius: 6px;
+  color: #fff;
+}
+
+article .buttons button.payment:hover {
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+
+article .buttons button.cancel {
+  color: var(--dark-blue);
+  letter-spacing: 1px;
+}
+
+article .buttons button.cancel:hover {
+  color: #000;
+}
